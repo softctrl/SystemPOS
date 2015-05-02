@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="scsys29JPA" transaction-type="RESOURCE_LOCAL">
+		<class>br.com.softctrl.sys029.model.AccountingPlan</class>
+		<class>br.com.softctrl.sys029.model.CashFLow</class>
+		<class>br.com.softctrl.sys029.model.CostCenter</class>
+		<class>br.com.softctrl.sys029.model.CompositionProduct</class>
+		<class>br.com.softctrl.sys029.model.Composition</class>
+		<class>br.com.softctrl.sys029.model.Coupon</class>
+		<class>br.com.softctrl.sys029.model.CouponProduct</class>
+		<class>br.com.softctrl.sys029.model.CouponCashMoviment</class>
+		<class>br.com.softctrl.sys029.model.Product</class>
+		<class>br.com.softctrl.sys029.model.Restaurant</class>
+		<class>br.com.softctrl.sys029.model.RestaurantTable</class>
+		<class>br.com.softctrl.sys029.model.User</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:postgresql://192.168.56.101:5432/sc_db_gen_esp" />
+			<property name="javax.persistence.jdbc.user" value="sc_dba_gen_esp" />
+			<property name="javax.persistence.jdbc.password" value="sc_dba_gen_esp" />
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+
+			<property name="javax.persistence.lock.timeout" value="60" />
+			<property name="javax.persistence.query.timeout" value="120" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<!-- <property name="hibernate.hbm2ddl.auto" value="create" /> -->
+		</properties>
+	</persistence-unit>
+</persistence>
